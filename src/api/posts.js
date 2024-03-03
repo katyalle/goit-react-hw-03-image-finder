@@ -9,3 +9,7 @@ const instance = axios.create({
 export const getAllPosts = () => {
     return instance.get("/")
 }
+
+export const searchPosts = q => {
+    return instance.get(`/?q=${q}`)
+}

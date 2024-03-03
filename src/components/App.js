@@ -1,4 +1,6 @@
 import Posts from "./Posts/posts"
+import PostsSearch from "./PostsSearch/PostsSearch"
+import PostsSearchForm from "./PostsSearch/PostsSearchForm/PostsSearchForm"
 
 
 
@@ -8,8 +10,9 @@ function App() {
 		
         <div>
             
-            <Posts />
-            
+             {/* <Posts />  */}
+            <PostsSearch/>
+             <PostsSearchForm /> 
         </div>
     )
 }

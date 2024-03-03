@@ -1,4 +1,4 @@
-.list{
+/* .list{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8,7 +8,7 @@
     border: 1px solid;
    border-radius: 5px;
    padding: 6px;
-}
+} */
 .error{
     color: red;
     font-size: 32px;

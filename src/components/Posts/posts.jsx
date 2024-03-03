@@ -1,7 +1,9 @@
 import { Component } from "react";
 import { getAllPosts } from "api/posts";
+import PostsSearcList from "components/PostsSearch/PostsSearchList/PostsSearchList";
 import axios from "axios";
 import styles from "./posts.module.css";
+import PostsSearch from "components/PostsSearch/PostsSearch";
 
 class Posts extends Component {
     state = {
@@ -29,11 +31,13 @@ this.setState({loading: true})
 
 
     render() {
+       
         const { posts, loading, error } = this.state;
-        const elements = posts.map(({ id, title, body }) => <li key={id} className={styles.item}>
-                                                            <h3>{title}</h3>
-                                                            <p>{body}</p>
-                                                            </li> );
+        <PostsSearcList/>
+        // const elements = posts.map(({ id, title, body }) => <li key={id} className={styles.item}>
+        //                                                     <h3>{title}</h3>
+        //                                                     <p>{body}</p>
+        //                                                     </li> );
                                                                 
         
         
@@ -42,9 +46,10 @@ this.setState({loading: true})
             <>
                 {error && <p className={styles.error}>{error}</p>}
                 {loading && <p>...Loading</p>}
-            <ul className={styles.list}>
+                <PostsSearch/>
+            {/* <ul className={styles.list}>
                 {elements}
-            </ul>
+            </ul> */}
             </>
 
            
