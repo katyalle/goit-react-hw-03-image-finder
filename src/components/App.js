@@ -11,8 +11,8 @@ function App() {
         <div>
             
              {/* <Posts />  */}
-            <PostsSearch/>
-             <PostsSearchForm /> 
+           <PostsSearch/>
+           
         </div>
     )
 }

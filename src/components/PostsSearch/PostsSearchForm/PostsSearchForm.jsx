@@ -31,13 +31,21 @@ class PostsSearchForm extends Component{
             <form onSubmit={handleChange} className={styles.form}>
 
                 <div className={styles.field}>
-                  <input value={search} onChange={handleChange} type="text" name="search" placeholder="Enter search phrase" />  
+                  <input value={search} onChange={handleChange} type="text" name="search" placeholder="Enter search phrase" />
                 </div>
                 <button type="submit">Search</button>
             </form>
     )
      }
       }
+
+
+
+
+
+
+
+
 
 
 export default PostsSearchForm;
