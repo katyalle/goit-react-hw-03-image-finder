@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { getAllPosts, searchPosts } from "api/posts";
-import axios from "axios";
+
 import Modal from "components/Modal/Modal";
 import Button from "components/Button/Button";
 import PostsSearchForm from "./PostsSearchForm/PostsSearchForm";

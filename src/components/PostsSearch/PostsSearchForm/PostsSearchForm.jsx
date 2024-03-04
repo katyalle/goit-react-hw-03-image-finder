@@ -28,7 +28,7 @@ class PostsSearchForm extends Component{
         const { search } = this.state;
 
         return (
-            <form onSubmit={handleChange} className={styles.form}>
+            <form onSubmit={handleSubmit} className={styles.form}>
 
                 <div className={styles.field}>
                   <input value={search} onChange={handleChange} type="text" name="search" placeholder="Enter search phrase" />
